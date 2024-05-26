@@ -15,6 +15,9 @@ GEM
       rack (>= 3.0.0, < 4)
     rack-session (2.0.0)
       rack (>= 3.0.0)
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
     rmagick (6.0.1)
       observer (~> 0.1)
       pkg-config (~> 1.4)
@@ -26,13 +29,16 @@ GEM
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
     tilt (2.3.0)
+    webrick (1.8.1)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
   json
   rack-cors
+  rackup
   rmagick
   sinatra
 
